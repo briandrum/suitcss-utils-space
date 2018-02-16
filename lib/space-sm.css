@@ -1,0 +1,184 @@
+/**
+ * @define utilities
+ * Size: breakpoint 1 (small)
+ */
+
+@media (--sm-viewport) {
+
+  /**
+   * Inset
+   */
+
+  .u-sm-spaceInsetQuarterEx {
+    padding: var(--spaceQuarterEx) !important;
+  }
+
+  .u-sm-spaceInsetHalfEx {
+    padding: var(--spaceHalfEx) !important;
+  }
+
+  .u-sm-spaceInsetThreeQuarterEx {
+    padding: var(--spaceThreeQuarterEx) !important;
+  }
+
+  .u-sm-spaceInsetOneEx {
+    padding: var(--spaceOneEx) !important;
+  }
+
+  .u-sm-spaceInsetOneAndAHalfEx {
+    padding: var(--spaceOneAndAHalfEx) !important;
+  }
+
+  .u-sm-spaceInsetTwoEx {
+    padding: var(--spaceTwoEx) !important;
+  }
+
+  .u-sm-spaceInsetThreeEx {
+    padding: var(--spaceThreeEx) !important;
+  }
+
+  .u-sm-spaceInsetFourEx {
+    padding: var(--spaceFourEx) !important;
+  }
+
+  .u-sm-spaceInsetEightEx {
+    padding: var(--spaceEightEx) !important;
+  }
+
+  /**
+   * Inset Squish
+   */
+
+  .u-sm-spaceInsetSquishExtraSmall {
+    padding: var(--spaceHalfEx) var(--spaceOneEx) !important;
+  }
+
+  .u-sm-spaceInsetSquishSmall {
+    padding: var(--spaceThreeQuarterEx) var(--spaceOneAndAHalfEx) !important;
+  }
+
+  .u-sm-spaceInsetSquishMedium {
+    padding: var(--spaceOneEx) var(--spaceTwoEx) !important;
+  }
+
+  .u-sm-spaceInsetSquishLarge {
+    padding: var(--spaceOneAndAHalfEx) var(--spaceThreeEx) !important;
+  }
+
+  .u-sm-spaceInsetSquishExtraLarge {
+    padding: var(--spaceTwoEx) var(--spaceFourEx) !important;
+  }
+
+  /**
+   * Inset Stretch
+   */
+
+  .u-sm-spaceInsetStretchExtraSmall {
+    padding: var(--spaceOneEx) var(--spaceHalfEx) !important;
+  }
+
+  .u-sm-spaceInsetStretchSmall {
+    padding: var(--spaceOneAndAHalfEx) var(--spaceThreeQuarterEx) !important;
+  }
+
+  .u-sm-spaceInsetStretchMedium {
+    padding: var(--spaceTwoEx) var(--spaceOneEx) !important;
+  }
+
+  .u-sm-spaceInsetStretchLarge {
+    padding: var(--spaceThreeEx) var(--spaceOneAndAHalfEx) !important;
+  }
+
+  .u-sm-spaceInsetStretchExtraLarge {
+    padding: var(--spaceFourEx) var(--spaceTwoEx) !important;
+  }
+
+  /**
+   * Inline
+   */
+
+  /* Left-aligned */
+
+  .u-sm-spaceInlineLeftHalfEx {
+    margin: 0 var(--spaceHalfEx) 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftThreeQuarterEx {
+    margin: 0 var(--spaceThreeQuarterEx) 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftOneEx {
+    margin: 0 var(--spaceOneEx) 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftOneAndAHalfEx {
+    margin: 0 var(--spaceOneAndAHalfEx) 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftTwoEx {
+    margin: 0 var(--spaceTwoEx) 0 0 !important;
+  }
+
+  /* Right-aligned */
+
+  .u-sm-spaceInlineRightHalfEx {
+    margin: 0 0 0 var(--spaceHalfEx) !important;
+  }
+
+  .u-sm-spaceInlineRightThreeQuarterEx {
+    margin: 0 0 0 var(--spaceThreeQuarterEx) !important;
+  }
+
+  .u-sm-spaceInlineRightOneEx {
+    margin: 0 0 0 var(--spaceOneEx) !important;
+  }
+
+  .u-sm-spaceInlineRightOneAndAHalfEx {
+    margin: 0 0 0 var(--spaceOneAndAHalfEx) !important;
+  }
+
+  .u-sm-spaceInlineRightTwoEx {
+    margin: 0 0 0 var(--spaceTwoEx) !important;
+  }
+
+  /**
+   * Stack
+   */
+
+  .u-sm-spaceStackQuarterEx {
+    margin: 0 0 var(--spaceQuarterEx) !important;
+  }
+
+  .u-sm-spaceStackHalfEx {
+    margin: 0 0 var(--spaceHalfEx) !important;
+  }
+
+  .u-sm-spaceStackThreeQuarterEx {
+    margin: 0 0 var(--spaceThreeQuarterEx) !important;
+  }
+
+  .u-sm-spaceStackOneEx {
+    margin: 0 0 var(--spaceOneEx) !important;
+  }
+
+  .u-sm-spaceStackOneAndAHalfEx {
+    margin: 0 0 var(--spaceOneAndAHalfEx) !important;
+  }
+
+  .u-sm-spaceStackTwoEx {
+    margin: 0 0 var(--spaceTwoEx) !important;
+  }
+
+  .u-sm-spaceStackThreeEx {
+    margin: 0 0 var(--spaceThreeEx) !important;
+  }
+
+  .u-sm-spaceStackFourEx {
+    margin: 0 0 var(--spaceFourEx) !important;
+  }
+
+  .u-sm-spaceStackEightEx {
+    margin: 0 0 var(--spaceEightEx) !important;
+  }
+
+}
