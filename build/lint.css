@@ -1,0 +1,193 @@
+/** @define utilities */
+
+/**
+ * Inset
+ */
+
+.u-spaceInsetQuarterEx {
+  padding: 2px !important;
+}
+
+.u-spaceInsetHalfEx {
+  padding: 4px !important;
+}
+
+.u-spaceInsetThreeQuarterEx {
+  padding: 6px !important;
+}
+
+.u-spaceInsetOneEx {
+  padding: 8px !important;
+}
+
+.u-spaceInsetOneAndAHalfEx {
+  padding: 12px !important;
+}
+
+.u-spaceInsetTwoEx {
+  padding: 16px !important;
+}
+
+.u-spaceInsetThreeEx {
+  padding: 24px !important;
+}
+
+.u-spaceInsetFourEx {
+  padding: 32px !important;
+}
+
+.u-spaceInsetEightEx {
+  padding: 64px !important;
+}
+
+/**
+ * Inset Squish
+ */
+
+.u-spaceInsetSquishExtraSmall {
+  padding: 4px 8px !important;
+}
+
+.u-spaceInsetSquishSmall {
+  padding: 6px 12px !important;
+}
+
+.u-spaceInsetSquishMedium {
+  padding: 8px 16px !important;
+}
+
+.u-spaceInsetSquishLarge {
+  padding: 12px 24px !important;
+}
+
+.u-spaceInsetSquishExtraLarge {
+  padding: 16px 32px !important;
+}
+
+/**
+ * Inset Stretch
+ */
+
+.u-spaceInsetStretchExtraSmall {
+  padding: 8px 4px !important;
+}
+
+.u-spaceInsetStretchSmall {
+  padding: 12px 6px !important;
+}
+
+.u-spaceInsetStretchMedium {
+  padding: 16px 8px !important;
+}
+
+.u-spaceInsetStretchLarge {
+  padding: 24px 12px !important;
+}
+
+.u-spaceInsetStretchExtraLarge {
+  padding: 32px 16px !important;
+}
+
+/**
+ * Inline
+ */
+
+/* Left-aligned */
+
+.u-spaceInlineLeftHalfEx {
+  margin: 0 4px 0 0 !important;
+}
+
+.u-spaceInlineLeftThreeQuarterEx {
+  margin: 0 6px 0 0 !important;
+}
+
+.u-spaceInlineLeftOneEx {
+  margin: 0 8px 0 0 !important;
+}
+
+.u-spaceInlineLeftOneAndAHalfEx {
+  margin: 0 12px 0 0 !important;
+}
+
+.u-spaceInlineLeftTwoEx {
+  margin: 0 16px 0 0 !important;
+}
+
+/* Right-aligned */
+
+.u-spaceInlineRightHalfEx {
+  margin: 0 0 0 4px !important;
+}
+
+.u-spaceInlineRightThreeQuarterEx {
+  margin: 0 0 0 6px !important;
+}
+
+.u-spaceInlineRightOneEx {
+  margin: 0 0 0 8px !important;
+}
+
+.u-spaceInlineRightOneAndAHalfEx {
+  margin: 0 0 0 12px !important;
+}
+
+.u-spaceInlineRightTwoEx {
+  margin: 0 0 0 16px !important;
+}
+
+/**
+ * Stack
+ */
+
+.u-spaceStackQuarterEx {
+  margin: 2px 0 0 !important;
+}
+
+.u-spaceStackHalfEx {
+  margin: 4px 0 0 !important;
+}
+
+.u-spaceStackThreeQuarterEx {
+  margin: 6px 0 0 !important;
+}
+
+.u-spaceStackOneEx {
+  margin: 8px 0 0 !important;
+}
+
+.u-spaceStackOneAndAHalfEx {
+  margin: 12px 0 0 !important;
+}
+
+.u-spaceStackTwoEx {
+  margin: 16px 0 0 !important;
+}
+
+.u-spaceStackThreeEx {
+  margin: 24px 0 0 !important;
+}
+
+.u-spaceStackFourEx {
+  margin: 32px 0 0 !important;
+}
+
+.u-spaceStackEightEx {
+  margin: 64px 0 0 !important;
+}
+
+/**
+ * @define utilities
+ * Size: breakpoint 1 (small)
+ */
+
+/**
+ * @define utilities
+ * Size: breakpoint 2 (medium)
+ */
+
+/**
+ * @define utilities
+ * Size: breakpoint 3 (large)
+ */
+

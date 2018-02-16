@@ -1,0 +1,807 @@
+/** @define Test */
+
+/**
+ * The 'describe' CSS counter
+ */
+
+.Test {
+  counter-reset: test-describe;
+}
+
+.Test-describe::before {
+  content: counter(test-describe);
+  counter-increment: test-describe;
+}
+
+/**
+ * The 'it' CSS counter
+ */
+
+.Test-describe {
+  counter-reset: test-it;
+}
+
+.Test-it::before {
+  content: counter(test-describe) "." counter(test-it);
+  counter-increment: test-it;
+}
+
+/**
+ * The test title
+ */
+
+.Test-title {
+  background: #eee;
+  color: #999;
+  font-family: sans-serif;
+  font-size: 2em;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/**
+ * The test description and expectation titles
+ */
+
+.Test-describe,
+.Test-it {
+  background: #eee;
+  border-left: 5px solid #666;
+  color: #666;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 0.75em 20px;
+}
+
+.Test-describe {
+  font-size: 1.5em;
+  margin: 60px 0 20px;
+}
+
+/**
+ * The counter styles
+ */
+
+.Test-describe::before,
+.Test-it::before {
+  color: #999;
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 30px;
+  text-transform: uppercase;
+}
+
+/** @define utilities */
+
+/**
+ * Inset
+ */
+
+.u-spaceInsetQuarterEx {
+  padding: 2px !important;
+}
+
+.u-spaceInsetHalfEx {
+  padding: 4px !important;
+}
+
+.u-spaceInsetThreeQuarterEx {
+  padding: 6px !important;
+}
+
+.u-spaceInsetOneEx {
+  padding: 8px !important;
+}
+
+.u-spaceInsetOneAndAHalfEx {
+  padding: 12px !important;
+}
+
+.u-spaceInsetTwoEx {
+  padding: 16px !important;
+}
+
+.u-spaceInsetThreeEx {
+  padding: 24px !important;
+}
+
+.u-spaceInsetFourEx {
+  padding: 32px !important;
+}
+
+.u-spaceInsetEightEx {
+  padding: 64px !important;
+}
+
+/**
+ * Inset Squish
+ */
+
+.u-spaceInsetSquishExtraSmall {
+  padding: 4px 8px !important;
+}
+
+.u-spaceInsetSquishSmall {
+  padding: 6px 12px !important;
+}
+
+.u-spaceInsetSquishMedium {
+  padding: 8px 16px !important;
+}
+
+.u-spaceInsetSquishLarge {
+  padding: 12px 24px !important;
+}
+
+.u-spaceInsetSquishExtraLarge {
+  padding: 16px 32px !important;
+}
+
+/**
+ * Inset Stretch
+ */
+
+.u-spaceInsetStretchExtraSmall {
+  padding: 8px 4px !important;
+}
+
+.u-spaceInsetStretchSmall {
+  padding: 12px 6px !important;
+}
+
+.u-spaceInsetStretchMedium {
+  padding: 16px 8px !important;
+}
+
+.u-spaceInsetStretchLarge {
+  padding: 24px 12px !important;
+}
+
+.u-spaceInsetStretchExtraLarge {
+  padding: 32px 16px !important;
+}
+
+/**
+ * Inline
+ */
+
+/* Left-aligned */
+
+.u-spaceInlineLeftHalfEx {
+  margin: 0 4px 0 0 !important;
+}
+
+.u-spaceInlineLeftThreeQuarterEx {
+  margin: 0 6px 0 0 !important;
+}
+
+.u-spaceInlineLeftOneEx {
+  margin: 0 8px 0 0 !important;
+}
+
+.u-spaceInlineLeftOneAndAHalfEx {
+  margin: 0 12px 0 0 !important;
+}
+
+.u-spaceInlineLeftTwoEx {
+  margin: 0 16px 0 0 !important;
+}
+
+/* Right-aligned */
+
+.u-spaceInlineRightHalfEx {
+  margin: 0 0 0 4px !important;
+}
+
+.u-spaceInlineRightThreeQuarterEx {
+  margin: 0 0 0 6px !important;
+}
+
+.u-spaceInlineRightOneEx {
+  margin: 0 0 0 8px !important;
+}
+
+.u-spaceInlineRightOneAndAHalfEx {
+  margin: 0 0 0 12px !important;
+}
+
+.u-spaceInlineRightTwoEx {
+  margin: 0 0 0 16px !important;
+}
+
+/**
+ * Stack
+ */
+
+.u-spaceStackQuarterEx {
+  margin: 2px 0 0 !important;
+}
+
+.u-spaceStackHalfEx {
+  margin: 4px 0 0 !important;
+}
+
+.u-spaceStackThreeQuarterEx {
+  margin: 6px 0 0 !important;
+}
+
+.u-spaceStackOneEx {
+  margin: 8px 0 0 !important;
+}
+
+.u-spaceStackOneAndAHalfEx {
+  margin: 12px 0 0 !important;
+}
+
+.u-spaceStackTwoEx {
+  margin: 16px 0 0 !important;
+}
+
+.u-spaceStackThreeEx {
+  margin: 24px 0 0 !important;
+}
+
+.u-spaceStackFourEx {
+  margin: 32px 0 0 !important;
+}
+
+.u-spaceStackEightEx {
+  margin: 64px 0 0 !important;
+}
+
+/**
+ * @define utilities
+ * Size: breakpoint 1 (small)
+ */
+
+@media (min-width:480px) and (max-width:640px) {
+
+  /**
+   * Inset
+   */
+
+  .u-sm-spaceInsetQuarterEx {
+    padding: 2px !important;
+  }
+
+  .u-sm-spaceInsetHalfEx {
+    padding: 4px !important;
+  }
+
+  .u-sm-spaceInsetThreeQuarterEx {
+    padding: 6px !important;
+  }
+
+  .u-sm-spaceInsetOneEx {
+    padding: 8px !important;
+  }
+
+  .u-sm-spaceInsetOneAndAHalfEx {
+    padding: 12px !important;
+  }
+
+  .u-sm-spaceInsetTwoEx {
+    padding: 16px !important;
+  }
+
+  .u-sm-spaceInsetThreeEx {
+    padding: 24px !important;
+  }
+
+  .u-sm-spaceInsetFourEx {
+    padding: 32px !important;
+  }
+
+  .u-sm-spaceInsetEightEx {
+    padding: 64px !important;
+  }
+
+  /**
+   * Inset Squish
+   */
+
+  .u-sm-spaceInsetSquishExtraSmall {
+    padding: 4px 8px !important;
+  }
+
+  .u-sm-spaceInsetSquishSmall {
+    padding: 6px 12px !important;
+  }
+
+  .u-sm-spaceInsetSquishMedium {
+    padding: 8px 16px !important;
+  }
+
+  .u-sm-spaceInsetSquishLarge {
+    padding: 12px 24px !important;
+  }
+
+  .u-sm-spaceInsetSquishExtraLarge {
+    padding: 16px 32px !important;
+  }
+
+  /**
+   * Inset Stretch
+   */
+
+  .u-sm-spaceInsetStretchExtraSmall {
+    padding: 8px 4px !important;
+  }
+
+  .u-sm-spaceInsetStretchSmall {
+    padding: 12px 6px !important;
+  }
+
+  .u-sm-spaceInsetStretchMedium {
+    padding: 16px 8px !important;
+  }
+
+  .u-sm-spaceInsetStretchLarge {
+    padding: 24px 12px !important;
+  }
+
+  .u-sm-spaceInsetStretchExtraLarge {
+    padding: 32px 16px !important;
+  }
+
+  /**
+   * Inline
+   */
+
+  /* Left-aligned */
+
+  .u-sm-spaceInlineLeftHalfEx {
+    margin: 0 4px 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftThreeQuarterEx {
+    margin: 0 6px 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftOneEx {
+    margin: 0 8px 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftOneAndAHalfEx {
+    margin: 0 12px 0 0 !important;
+  }
+
+  .u-sm-spaceInlineLeftTwoEx {
+    margin: 0 16px 0 0 !important;
+  }
+
+  /* Right-aligned */
+
+  .u-sm-spaceInlineRightHalfEx {
+    margin: 0 0 0 4px !important;
+  }
+
+  .u-sm-spaceInlineRightThreeQuarterEx {
+    margin: 0 0 0 6px !important;
+  }
+
+  .u-sm-spaceInlineRightOneEx {
+    margin: 0 0 0 8px !important;
+  }
+
+  .u-sm-spaceInlineRightOneAndAHalfEx {
+    margin: 0 0 0 12px !important;
+  }
+
+  .u-sm-spaceInlineRightTwoEx {
+    margin: 0 0 0 16px !important;
+  }
+
+  /**
+   * Stack
+   */
+
+  .u-sm-spaceStackQuarterEx {
+    margin: 0 0 2px !important;
+  }
+
+  .u-sm-spaceStackHalfEx {
+    margin: 0 0 4px !important;
+  }
+
+  .u-sm-spaceStackThreeQuarterEx {
+    margin: 0 0 6px !important;
+  }
+
+  .u-sm-spaceStackOneEx {
+    margin: 0 0 8px !important;
+  }
+
+  .u-sm-spaceStackOneAndAHalfEx {
+    margin: 0 0 12px !important;
+  }
+
+  .u-sm-spaceStackTwoEx {
+    margin: 0 0 16px !important;
+  }
+
+  .u-sm-spaceStackThreeEx {
+    margin: 0 0 24px !important;
+  }
+
+  .u-sm-spaceStackFourEx {
+    margin: 0 0 32px !important;
+  }
+
+  .u-sm-spaceStackEightEx {
+    margin: 0 0 64px !important;
+  }
+
+}
+
+/**
+ * @define utilities
+ * Size: breakpoint 2 (medium)
+ */
+
+@media (min-width:640px) and (max-width:960px) {
+
+  /**
+   * Inset
+   */
+
+  .u-md-spaceInsetQuarterEx {
+    padding: 2px !important;
+  }
+
+  .u-md-spaceInsetHalfEx {
+    padding: 4px !important;
+  }
+
+  .u-md-spaceInsetThreeQuarterEx {
+    padding: 6px !important;
+  }
+
+  .u-md-spaceInsetOneEx {
+    padding: 8px !important;
+  }
+
+  .u-md-spaceInsetOneAndAHalfEx {
+    padding: 12px !important;
+  }
+
+  .u-md-spaceInsetTwoEx {
+    padding: 16px !important;
+  }
+
+  .u-md-spaceInsetThreeEx {
+    padding: 24px !important;
+  }
+
+  .u-md-spaceInsetFourEx {
+    padding: 32px !important;
+  }
+
+  .u-md-spaceInsetEightEx {
+    padding: 64px !important;
+  }
+
+  /**
+   * Inset Squish
+   */
+
+  .u-md-spaceInsetSquishExtraSmall {
+    padding: 4px 8px !important;
+  }
+
+  .u-md-spaceInsetSquishSmall {
+    padding: 6px 12px !important;
+  }
+
+  .u-md-spaceInsetSquishMedium {
+    padding: 8px 16px !important;
+  }
+
+  .u-md-spaceInsetSquishLarge {
+    padding: 12px 24px !important;
+  }
+
+  .u-md-spaceInsetSquishExtraLarge {
+    padding: 32px 16px !important;
+  }
+
+  /**
+   * Inset Stretch
+   */
+
+  .u-md-spaceInsetStretchExtraSmall {
+    padding: 8px 4px !important;
+  }
+
+  .u-md-spaceInsetStretchSmall {
+    padding: 12px 6px !important;
+  }
+
+  .u-md-spaceInsetStretchMedium {
+    padding: 16px 8px !important;
+  }
+
+  .u-md-spaceInsetStretchLarge {
+    padding: 24px 12px !important;
+  }
+
+  .u-md-spaceInsetStretchExtraLarge {
+    padding: 16px 32px !important;
+  }
+
+  /**
+   * Inline
+   */
+
+  /* Left-aligned */
+
+  .u-md-spaceInlineLeftHalfEx {
+    margin: 0 4px 0 0 !important;
+  }
+
+  .u-md-spaceInlineLeftThreeQuarterEx {
+    margin: 0 6px 0 0 !important;
+  }
+
+  .u-md-spaceInlineLeftOneEx {
+    margin: 0 8px 0 0 !important;
+  }
+
+  .u-md-spaceInlineLeftOneAndAHalfEx {
+    margin: 0 12px 0 0 !important;
+  }
+
+  .u-md-spaceInlineLeftTwoEx {
+    margin: 0 16px 0 0 !important;
+  }
+
+  /* Right-aligned */
+
+  .u-md-spaceInlineRightHalfEx {
+    margin: 0 0 0 4px !important;
+  }
+
+  .u-md-spaceInlineRightThreeQuarterEx {
+    margin: 0 0 0 6px !important;
+  }
+
+  .u-md-spaceInlineRightOneEx {
+    margin: 0 0 0 8px !important;
+  }
+
+  .u-md-spaceInlineRightOneAndAHalfEx {
+    margin: 0 0 0 12px !important;
+  }
+
+  .u-md-spaceInlineRightTwoEx {
+    margin: 0 0 0 16px !important;
+  }
+
+  /**
+   * Stack
+   */
+
+  .u-md-spaceStackQuarterEx {
+    margin: 0 0 2px !important;
+  }
+
+  .u-md-spaceStackHalfEx {
+    margin: 0 0 4px !important;
+  }
+
+  .u-md-spaceStackThreeQuarterEx {
+    margin: 0 0 6px !important;
+  }
+
+  .u-md-spaceStackOneEx {
+    margin: 0 0 8px !important;
+  }
+
+  .u-md-spaceStackOneAndAHalfEx {
+    margin: 0 0 12px !important;
+  }
+
+  .u-md-spaceStackTwoEx {
+    margin: 0 0 16px !important;
+  }
+
+  .u-md-spaceStackThreeEx {
+    margin: 0 0 24px !important;
+  }
+
+  .u-md-spaceStackFourEx {
+    margin: 0 0 32px !important;
+  }
+
+  .u-md-spaceStackEightEx {
+    margin: 0 0 64px !important;
+  }
+
+}
+
+/**
+ * @define utilities
+ * Size: breakpoint 3 (large)
+ */
+
+@media (min-width:960px) {
+
+  /**
+   * Inset
+   */
+
+  .u-lg-spaceInsetQuarterEx {
+    padding: 2px !important;
+  }
+
+  .u-lg-spaceInsetHalfEx {
+    padding: 4px !important;
+  }
+
+  .u-lg-spaceInsetThreeQuarterEx {
+    padding: 6px !important;
+  }
+
+  .u-lg-spaceInsetOneEx {
+    padding: 8px !important;
+  }
+
+  .u-lg-spaceInsetOneAndAHalfEx {
+    padding: 12px !important;
+  }
+
+  .u-lg-spaceInsetTwoEx {
+    padding: 16px !important;
+  }
+
+  .u-lg-spaceInsetThreeEx {
+    padding: 24px !important;
+  }
+
+  .u-lg-spaceInsetFourEx {
+    padding: 32px !important;
+  }
+
+  .u-lg-spaceInsetEightEx {
+    padding: 64px !important;
+  }
+
+  /**
+   * Inset Squish
+   */
+
+  .u-lg-spaceInsetSquishExtraSmall {
+    padding: 4px 8px !important;
+  }
+
+  .u-lg-spaceInsetSquishSmall {
+    padding: 6px 12px !important;
+  }
+
+  .u-lg-spaceInsetSquishMedium {
+    padding: 8px 16px !important;
+  }
+
+  .u-lg-spaceInsetSquishLarge {
+    padding: 12px 24px !important;
+  }
+
+  .u-lg-spaceInsetSquishExtraLarge {
+    padding: 16px 32px !important;
+  }
+
+  /**
+   * Inset Stretch
+   */
+
+  .u-lg-spaceInsetStretchExtraSmall {
+    padding: 8px 4px !important;
+  }
+
+  .u-lg-spaceInsetStretchSmall {
+    padding: 12px 6px !important;
+  }
+
+  .u-lg-spaceInsetStretchMedium {
+    padding: 16px 8px !important;
+  }
+
+  .u-lg-spaceInsetStretchLarge {
+    padding: 24px 12px !important;
+  }
+
+  .u-lg-spaceInsetStretchExtraLarge {
+    padding: 32px 16px !important;
+  }
+
+  /**
+   * Inline
+   */
+
+  /* Left-aligned */
+
+  .u-lg-spaceInlineLeftHalfEx {
+    margin: 0 4px 0 0 !important;
+  }
+
+  .u-lg-spaceInlineLeftThreeQuarterEx {
+    margin: 0 6px 0 0 !important;
+  }
+
+  .u-lg-spaceInlineLeftOneEx {
+    margin: 0 8px 0 0 !important;
+  }
+
+  .u-lg-spaceInlineLeftOneAndAHalfEx {
+    margin: 0 12px 0 0 !important;
+  }
+
+  .u-lg-spaceInlineLeftTwoEx {
+    margin: 0 16px 0 0 !important;
+  }
+
+  /* Right-aligned */
+
+  .u-lg-spaceInlineRightHalfEx {
+    margin: 0 0 0 4px !important;
+  }
+
+  .u-lg-spaceInlineRightThreeQuarterEx {
+    margin: 0 0 0 6px !important;
+  }
+
+  .u-lg-spaceInlineRightOneEx {
+    margin: 0 0 0 8px !important;
+  }
+
+  .u-lg-spaceInlineRightOneAndAHalfEx {
+    margin: 0 0 0 12px !important;
+  }
+
+  .u-lg-spaceInlineRightTwoEx {
+    margin: 0 0 0 16px !important;
+  }
+
+  /**
+   * Stack
+   */
+
+  .u-lg-spaceStackQuarterEx {
+    margin: 0 0 2px !important;
+  }
+
+  .u-lg-spaceStackHalfEx {
+    margin: 0 0 4px !important;
+  }
+
+  .u-lg-spaceStackThreeQuarterEx {
+    margin: 0 0 6px !important;
+  }
+
+  .u-lg-spaceStackOneEx {
+    margin: 0 0 8px !important;
+  }
+
+  .u-lg-spaceStackOneAndAHalfEx {
+    margin: 0 0 12px !important;
+  }
+
+  .u-lg-spaceStackTwoEx {
+    margin: 0 0 16px !important;
+  }
+
+  .u-lg-spaceStackThreeEx {
+    margin: 0 0 24px !important;
+  }
+
+  .u-lg-spaceStackFourEx {
+    margin: 0 0 32px !important;
+  }
+
+  .u-lg-spaceStackEightEx {
+    margin: 0 0 64px !important;
+  }
+
+}
+
